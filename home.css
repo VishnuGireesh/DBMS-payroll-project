@@ -1,0 +1,16 @@
+    body {
+        background-image: url(images/bg1.jpg);
+    }
+    
+    #logbox {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(252, 252, 246, 0.192);
+        padding-left: 75px;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        padding-right: 75px;
+        margin-top: 150px;
+    }
+    
+    #box {}
