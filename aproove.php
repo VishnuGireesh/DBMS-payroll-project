@@ -41,7 +41,7 @@ $result=mysqli_query($connection,$sql);
                <td><?php echo $row['phone']; ?></td>
                <td><?php echo $row['email']; ?></td>
                <td><?php echo $row['j_date']; ?></td>
-               <td><a href="aprooveemp.php?edit=<?php echo $row['emp_id']; ?>mail=<?php echo $row['email']; ?>p=<?php echo $row['pass']; ?>">Accept</a></td>
+               <td><a href="aprooveemp.php?edit=<?php echo $row['emp_id']; ?>">Accept</a></td>
                <td><a href="deleteemp.php?del=<?php echo $row['emp_id']; ?>">Reject</a></td>
                
            </tr>
