@@ -18,6 +18,21 @@
          
          header("location: home.php");
      }
+     elseif($count==0){
+        $query="SELECT * FROM ulogin WHERE uname='$username' and pass='$password'";
+     
+        $result=mysqli_query($connection,$query) or die(mysqli_error($connection));
+        
+        $count2=mysqli_num_rows($result);
+        
+        if($count2==1)
+        {
+            $_SESSION['username']=$username;
+            echo"You have logged in successfully";
+            
+            header("location: aproove.php");
+        }
+    }
      else{
          $fmsg="Invalid username or password";
          echo"<br>Invalid username or password";
