@@ -1,16 +1,17 @@
     body {
-        background-image: url(images/bg1.jpg);
+        background-image: url(images/b.jpeg);
     }
     
     #logbox {
         width: 400px;
         height: 400px;
-        background-color: rgba(252, 252, 246, 0.192);
+        background-color: rgba(17, 17, 16, 0.116);
         padding-left: 75px;
         padding-top: 100px;
         padding-bottom: 40px;
         padding-right: 75px;
         margin-top: 150px;
+        border-radius: 20px;
     }
     
     #box {}

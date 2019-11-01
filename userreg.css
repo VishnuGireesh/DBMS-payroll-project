@@ -1,5 +1,16 @@
 body {
-    background-image: url(images/bg1.jpg);
+    background-image: url(images/b.jpeg);
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+div {
+    margin: 0px;
 }
 
 #regform {
@@ -10,4 +21,59 @@ body {
     margin-left: 50px;
     margin-bottom: 75px;
     margin-top: 50px;
+}
+
+.table td {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+table {
+    margin: 0px;
+}
+
+#acc {
+    background-color: rgba(84, 238, 84, 0.534);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#acc:hover {
+    background-color: rgba(84, 238, 84, 0.815);
+    padding: 12px;
+}
+
+#re {
+    background-color: rgba(240, 69, 83, 0.534);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#re:hover {
+    background-color: rgba(240, 69, 83, 0.767);
+    padding: 12px;
+}
+
+#top {
+    background-color: #05386B;
+    color: white;
+}
+
+#sidebox {
+    color: white;
+    text-align: left;
+    background-color: #05386B;
+    margin: 0px;
+}
+
+.opt a {
+    color: white;
+    text-decoration: none;
+}
+
+.opt {
+    background-color: #05386B;
+    padding: 7px;
+    margin: 0px;
+    border: 1px solid white;
 }

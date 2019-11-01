@@ -14,16 +14,28 @@ $result=mysqli_query($connection,$sql);
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-5.10.2-web\css\all.css">
         <link rel="stylesheet" href="fontawesome-free-5.10.2-web\js\all.js">
+        <script src="https://kit.fontawesome.com/8877312db4.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="userreg.css">
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2 text-center"></div>
+                <div class="col-2 text-center">
+                    <div id="sidebox">
+                        <div class="opt">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#">ADD SALARY</a>
+                                <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-10 text-center">
                 <table class="table">
-  <thead class="thead-dark">
+  <thead id="top">
     <tr>
       <th scope="col">Emp_Id</th>
       <th scope="col">Name</th>
@@ -41,8 +53,8 @@ $result=mysqli_query($connection,$sql);
                <td><?php echo $row['phone']; ?></td>
                <td><?php echo $row['email']; ?></td>
                <td><?php echo $row['j_date']; ?></td>
-               <td><a href="aprooveemp.php?edit=<?php echo $row['emp_id']; ?>">Accept</a></td>
-               <td><a href="deleteemp.php?del=<?php echo $row['emp_id']; ?>">Reject</a></td>
+               <td><a href="aprooveemp.php?edit=<?php echo $row['emp_id']; ?>" id="acc">Accept</a></td>
+               <td><a href="deleteemp.php?del=<?php echo $row['emp_id']; ?>" id="re">Reject</a></td>
                
            </tr>
            <?php } ?>
