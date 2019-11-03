@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.10.2-web\css\all.css">
+    <link rel="stylesheet" href="fontawesome-free-5.10.2-web\js\all.js">
+    <link rel="stylesheet" href="userreg.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+                <div id="regform">
+                    <form method="POST" action="adduser.php">
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mobile No</label>
+                            <input type="tel" class="form-control" name="mob" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><small>Format: 123-456-7890</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Gender</label>&nbsp;&nbsp;
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" value="1" required>
+                                <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" value="2" required>
+                                <label class="form-check-label" for="inlineCheckbox2">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Addres</label>
+                            <textarea class="form-control" name="adress" rows=5 cols=15></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Date of Birth</label>
+                            <input type="date" class="form-control" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Joining date</label>
+                            <input type="date" class="form-control" name="jdate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" name="pass" id="password" minlength=1 required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm password</label>
+                            <input type="password" class="form-control" name="passwordConfirm" id="passwordConfirm" minlength=1 required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Grade</label>
+                            <select class="form-control form-control-sm" name="grade">
+                      <option value=1>Grade 1</option>
+                      <option value=2>Grade 2</option>
+                      <option value=3>Grade 3</option>
+                    </select>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>

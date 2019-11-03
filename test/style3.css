@@ -1,0 +1,36 @@
+
+input[type="submit"] {
+    background-color: rgb(1, 85, 153);
+    color: white;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover {
+  background: #0165b6;
+  opacity: 0.8;  
+}
+
+
+button {
+  background-color: rgb(1, 85, 153);
+  color: white;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ffa600;
+}
+
